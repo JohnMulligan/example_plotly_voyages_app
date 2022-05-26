@@ -80,7 +80,7 @@ def update_bar_graph(donut_sector_var,donut_value_var):
 
 
 
-app.run_server(debug=True, use_reloader=False)  # Turn off reloader if inside Jupyter
+app.run_server()  # Turn off reloader if inside Jupyter
 
 
 
