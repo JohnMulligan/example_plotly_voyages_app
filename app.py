@@ -8,7 +8,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash()
 server = app.server
 
 
