@@ -8,6 +8,8 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
+app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 
 donut_value_vars=[
@@ -80,11 +82,6 @@ def update_bar_graph(donut_sector_var,donut_value_var):
 
 
 
-app.run_server()  # Turn off reloader if inside Jupyter
-
-
-
-
-
-
+if __name__ == '__main__':
+	app.run_server(debug=False)
 
