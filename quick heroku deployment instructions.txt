@@ -1,0 +1,26 @@
+0. with our current app settings, you'll need the app_secrets.py file
+	... and the variables defined properly
+1. app.py
+2. Procfile
+3. .gitignore
+	include these lines
+	venv/
+	__pycache__/
+4. requirements.txt
+
+5. add your env vars to vanv/bin/activate
+5a. source venv/bin/activate
+
+6. git init .
+7. git add .
+8. git commit -m "first commit"
+
+9. heroku login
+10. heroku create
+11. find your branch name with:
+	git branch
+12. git push heroku BRANCHNAME
+13. set your remote heroku env vars
+	heroku config:set varname=value
+
+debugging--> heroku logs --tail
